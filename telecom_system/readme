@@ -1,0 +1,189 @@
+ 📡 Telecom System Simulation
+
+📌 Overview
+
+This project implements a complete **digital communication system simulation**, demonstrating how information is transmitted over a noisy channel and how different techniques affect performance.
+
+The system models a real-world communication pipeline:
+
+**Message → Encoding → Modulation → Channel (Noise) → Demodulation → Decoding → Evaluation**
+
+The goal is to study how **noise impacts signal transmission** and how techniques like **modulation schemes and error correction** improve reliability.
+
+---
+
+ 🎯 Objectives
+
+* Simulate a realistic communication system
+* Analyze the effect of noise on transmitted signals
+* Compare different modulation techniques
+* Evaluate the impact of error correction
+* Measure system performance using Bit Error Rate (BER)
+
+---
+
+ 🧠 System Architecture
+
+The system is divided into the following components:
+
+ 1. Encoding
+
+Converts a text message into binary data for transmission.
+
+ 2. Modulation
+
+Transforms binary data into signals suitable for transmission.
+
+* **BPSK (Binary Phase Shift Keying)**
+  Simple and robust, uses 1 bit per symbol
+
+* **QPSK (Quadrature Phase Shift Keying)**
+  More efficient, uses 2 bits per symbol
+
+---
+
+ 3. Channel (Noise Model)
+
+The system simulates real-world transmission using **Additive White Gaussian Noise (AWGN)**.
+
+Noise levels are varied to observe their effect on system performance.
+
+---
+
+ 4. Demodulation
+
+Recovers binary data from the received signal.
+
+---
+
+ 5. Error Correction
+
+Implements **Hamming (7,4) Code**:
+
+* Detects and corrects single-bit errors
+* Improves reliability in noisy environments
+
+---
+
+ 6. Performance Evaluation
+
+System performance is measured using:
+
+ **Bit Error Rate (BER)**
+  Measures how many bits are incorrectly received
+
+---
+
+ 📊 Key Experiments
+
+ 🔹 1. Signal vs Noise Visualization
+
+Demonstrates how increasing noise distorts the signal:
+
+* Clean signal (ideal)
+* Low noise (minor distortion)
+* High noise (severe distortion)
+
+---
+
+ 🔹 2. BER vs Noise (Single System)
+
+Shows how error rate increases as noise increases.
+
+---
+
+ 🔹 3. System Comparison
+
+Compares three systems:
+
+| System         | Description                  |
+| -------------- | ---------------------------- |
+| BPSK           | Basic modulation             |
+| BPSK + Hamming | Error-corrected system       |
+| QPSK           | Higher efficiency modulation |
+
+---
+
+ 📈 Results & Insights
+
+ 🔸 Noise Impact
+
+As noise increases:
+
+* Signal distortion increases
+* Bit Error Rate (BER) increases
+
+---
+
+ 🔸 Error Correction
+
+Hamming coding significantly reduces errors:
+
+* Detects and corrects transmission errors
+* Improves reliability under noisy conditions
+
+---
+
+ 🔸 Modulation Trade-offs
+
+* **BPSK** → More reliable
+* **QPSK** → More efficient but slightly more error-prone
+
+---
+
+ 🔸 Key Finding
+
+There is a trade-off between:
+
+* **Reliability (low BER)**
+* **Efficiency (higher data rate)**
+
+---
+
+ 🖼️ Generated Outputs
+
+The project produces:
+
+* Signal vs noise plots
+* BPSK signal visualization
+* QPSK constellation diagram
+* BER vs noise graphs
+* System comparison charts
+
+---
+
+ 🏆 Significance
+
+This project demonstrates core concepts in:
+
+* Digital Communications
+* Signal Processing
+* Information Theory
+
+It reflects practical ideas used in modern systems such as:
+
+* Wireless communication (WiFi, LTE)
+* Satellite communication
+* Data transmission systems
+
+---
+
+🚀 Future Improvements
+
+* Adaptive filtering techniques
+* Advanced modulation (e.g., 16-QAM)
+* Forward Error Correction (Reed-Solomon, LDPC)
+* Real-world signal input (audio transmission)
+* Performance optimization and real-time simulation
+
+---
+
+ 📌 Conclusion
+
+This project builds a complete communication system from scratch and demonstrates how:
+
+* Signals are affected by noise
+* Errors occur during transmission
+* Engineering techniques can mitigate these errors
+
+It provides a strong foundation for further work in **telecommunications and signal processing research**.
