@@ -17,30 +17,6 @@ The simulations progressively build from basic packet transmission to more advan
 * Simulate real-world multi-node network environments
 
 
-
- ⚙️ Project Structure
-
-
-network-performance-simulation/
-│
-├── README.md
-├── requirements.txt
-│
-├── simulations/
-│   ├── 01_basic_simulation.py
-│   ├── 02_loss_comparison.py
-│   ├── 03_bandwidth_simulation.py
-│   ├── 04_queue_simulation.py
-│   ├── 05_visual_analysis.py
-│   ├── 06_multi_node_simulation.py
-│
-├── results/
-│   ├── queue_plot.png
-│   ├── delay_plot.png
-│
-└── docs/
-    └── explanation.md
-
  🚀 Features
 
  🔹 Basic Simulation
