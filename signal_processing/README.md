@@ -130,7 +130,7 @@ This project demonstrates fundamental concepts in:
 
  🧑‍💻 Author
 
-[Your Name]
+Peterson Kiboi
 
 ---
 
